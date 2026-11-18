@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio of Alex Rivera — creative developer & digital designer crafting beautiful, functional web experiences." />
+  <title>Alex Rivera — Creative Developer & Designer</title>
+  <link rel="icon" type="image/png" sizes="512x512" href="src/literature.png" />
+  <link rel="apple-touch-icon" href="src/literature.png" />
+  <meta name="theme-color" content="#08080d" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Preloader -->
+  <div class="preloader" id="preloader">
+    <div class="preloader__logo">AR<span>.</span></div>
+    <div class="preloader__bar"><span></span></div>
+  </div>
+
+  <!-- Custom cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
+
+  <!-- Scroll progress bar -->
+  <div class="progress-bar" id="progressBar"></div>
+
+  <!-- Navigation -->
+  <header class="nav" id="nav">
+    <a href="#home" class="nav__logo" data-cursor="pointer">AR<span>.</span></a>
+    <nav class="nav__links" id="navLinks">
+      <a href="#home" class="nav__link active">Home</a>
+      <a href="#about" class="nav__link">About</a>
+      <a href="#work" class="nav__link">Work</a>
+      <a href="#skills" class="nav__link">Skills</a>
+      <a href="#contact" class="nav__link">Contact</a>
+    </nav>
+    <div class="nav__actions">
+      <a href="#contact" class="btn btn--small" data-cursor="pointer">Let's talk <span class="btn__arrow">↗</span></a>
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" data-cursor="pointer">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero" id="home">
+      <canvas id="heroCanvas" class="hero__canvas"></canvas>
+      <div class="hero__glow hero__glow--1"></div>
+      <div class="hero__glow hero__glow--2"></div>
+
+      <div class="hero__inner container">
+        <div class="hero__content">
+          <p class="hero__eyebrow reveal"><span class="dot"></span> Available for freelance work</p>
+          <h1 class="hero__title">
+            <span class="hero__line reveal">I craft digital</span>
+            <span class="hero__line reveal">experiences that</span>
+            <span class="hero__line reveal"><span class="gradient-text">inspire.</span></span>
+          </h1>
+          <p class="hero__subtitle reveal">
+            Creative developer &amp; designer turning bold ideas into elegant,
+            interactive products. I blend design, motion, and code to build
+            things people love to use.
+          </p>
+          <div class="hero__actions reveal">
+            <a href="#work" class="btn btn--primary" data-cursor="pointer">View my work <span class="btn__arrow">↗</span></a>
+            <a href="#contact" class="btn btn--ghost" data-cursor="pointer">Get in touch</a>
+          </div>
+          <div class="hero__socials reveal">
+            <a href="#" aria-label="GitHub" data-cursor="pointer">GitHub</a>
+            <a href="#" aria-label="Dribbble" data-cursor="pointer">Dribbble</a>
+            <a href="#" aria-label="LinkedIn" data-cursor="pointer">LinkedIn</a>
+            <a href="#" aria-label="Twitter" data-cursor="pointer">Twitter</a>
+          </div>
+        </div>
+
+        <div class="hero__visual reveal" aria-hidden="true">
+          <div class="hero__card">
+            <div class="hero__card-top">
+              <span class="hero__card-dot"></span><span class="hero__card-dot"></span><span class="hero__card-dot"></span>
+            </div>
+            <div class="hero__card-body">
+              <div class="code-line"><span class="c-key">const</span> <span class="c-var">passion</span> = <span class="c-str">'creating'</span>;</div>
+              <div class="code-line"><span class="c-key">while</span> (<span class="c-var">inspired</span>) {</div>
+              <div class="code-line indent"><span class="c-var">build</span>(<span class="c-str">'beautiful things'</span>);</div>
+              <div class="code-line indent"><span class="c-var">ship</span>(<span class="c-str">'with care'</span>);</div>
+              <div class="code-line">}</div>
+              <div class="code-line"><span class="c-com">// always learning, always creating ✦</span></div>
+            </div>
+            <div class="hero__card-badge">
+              <span class="pulse"></span> Currently building
+            </div>
+          </div>
+          <div class="hero__float hero__float--1">✦</div>
+          <div class="hero__float hero__float--2">◈</div>
+          <div class="hero__float hero__float--3">◆</div>
+        </div>
+      </div>
+
+      <a href="#about" class="hero__scroll" aria-label="Scroll to about" data-cursor="pointer">
+        <span class="hero__scroll-line"></span> Scroll to explore
+      </a>
+    </section>
+
+    <!-- About -->
+    <section class="section about" id="about">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="section__label">01 / About me</span>
+          <h2 class="section__title">A little about <span class="gradient-text">who I am</span></h2>
+        </div>
+        <div class="about__grid">
+          <div class="about__text reveal">
+            <p class="about__lead">
+              I'm a creative developer and designer based in Berlin, with a
+              passion for building digital products that feel as good as they look.
+            </p>
+            <p>
+              With 6+ years of experience, I bridge the gap between design and
+              engineering — translating complex ideas into intuitive, polished
+              interfaces. I care deeply about the details: the micro-interactions,
+              the typography, the performance, and the feeling a product leaves you with.
+            </p>
+            <p>
+              When I'm not coding, you'll find me exploring new design trends,
+              experimenting with generative art, or capturing cityscapes with my camera.
+            </p>
+            <a href="#contact" class="link-arrow" data-cursor="pointer">Let's work together <span>↗</span></a>
+          </div>
+          <div class="about__stats reveal">
+            <div class="stat"><span class="stat__num" data-count="6">0</span><span class="stat__label">+ Years of experience</span></div>
+            <div class="stat"><span class="stat__num" data-count="42">0</span><span class="stat__label">Projects delivered</span></div>
+            <div class="stat"><span class="stat__num" data-count="18">0</span><span class="stat__label">Happy clients</span></div>
+            <div class="stat"><span class="stat__num" data-count="9">0</span><span class="stat__label">Design awards</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section class="section services">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="section__label">02 / What I do</span>
+          <h2 class="section__title">Services I <span class="gradient-text">offer</span></h2>
+        </div>
+        <div class="services__grid">
+          <div class="service-card reveal" data-cursor="pointer">
+            <div class="service-card__icon">◈</div>
+            <h3>Web Development</h3>
+            <p>Building fast, responsive, and accessible websites with modern frameworks and clean code.</p>
+            <span class="service-card__num">01</span>
+          </div>
+          <div class="service-card reveal" data-cursor="pointer">
+            <div class="service-card__icon">✦</div>
+            <h3>UI/UX Design</h3>
+            <p>Crafting intuitive interfaces and seamless user journeys backed by research and empathy.</p>
+            <span class="service-card__num">02</span>
+          </div>
+          <div class="service-card reveal" data-cursor="pointer">
+            <div class="service-card__icon">◐</div>
+            <h3>Motion &amp; Animation</h3>
+            <p>Adding life to interfaces with purposeful motion, micro-interactions, and storytelling.</p>
+            <span class="service-card__num">03</span>
+          </div>
+          <div class="service-card reveal" data-cursor="pointer">
+            <div class="service-card__icon">⬡</div>
+            <h3>Brand Identity</h3>
+            <p>Creating cohesive visual languages, from logos and type systems to full design guidelines.</p>
+            <span class="service-card__num">04</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Work -->
+    <section class="section work" id="work">
+      <div class="container">
+        <div class="section__head section__head--split reveal">
+          <div>
+            <span class="section__label">03 / Selected work</span>
+            <h2 class="section__title">Featured <span class="gradient-text">projects</span></h2>
+          </div>
+          <p class="section__desc">A selection of things I've designed and built recently. Each project is a story of solving real problems with creative thinking.</p>
+        </div>
+
+        <div class="work__grid">
+          <article class="project reveal" data-cursor="pointer">
+            <div class="project__thumb project__thumb--1">
+              <span class="project__category">Web App</span>
+              <div class="project__preview">
+                <div class="mock-window"><i></i><i></i><i></i></div>
+                <div class="mock-chart"><span></span><span></span><span></span><span></span></div>
+              </div>
+            </div>
+            <div class="project__info">
+              <div><h3>Nova Analytics</h3><p>A real-time analytics dashboard with beautiful data visualization.</p></div>
+              <span class="project__arrow">↗</span>
+            </div>
+            <div class="project__tags"><span>React</span><span>D3.js</span><span>UI Design</span></div>
+          </article>
+
+          <article class="project reveal" data-cursor="pointer">
+            <div class="project__thumb project__thumb--2">
+              <span class="project__category">Branding</span>
+              <div class="project__preview">
+                <div class="mock-logo">✳</div>
+                <div class="mock-caption">LUMEN STUDIO</div>
+              </div>
+            </div>
+            <div class="project__info">
+              <div><h3>Lumen Studio</h3><p>Complete brand identity and digital presence for a creative agency.</p></div>
+              <span class="project__arrow">↗</span>
+            </div>
+            <div class="project__tags"><span>Branding</span><span>Art Direction</span><span>Webflow</span></div>
+          </article>
+
+          <article class="project reveal" data-cursor="pointer">
+            <div class="project__thumb project__thumb--3">
+              <span class="project__category">E-commerce</span>
+              <div class="project__preview">
+                <div class="mock-phone"><div class="mock-phone-screen"></div></div>
+                <div class="mock-phone mock-phone--back"><div class="mock-phone-screen"></div></div>
+              </div>
+            </div>
+            <div class="project__info">
+              <div><h3>Orbit Store</h3><p>A modern headless storefront with a buttery-smooth shopping experience.</p></div>
+              <span class="project__arrow">↗</span>
+            </div>
+            <div class="project__tags"><span>Next.js</span><span>Shopify</span><span>Motion</span></div>
+          </article>
+
+          <article class="project reveal" data-cursor="pointer">
+            <div class="project__thumb project__thumb--4">
+              <span class="project__category">Creative</span>
+              <div class="project__preview">
+                <div class="mock-orbit"><i></i><i></i><i></i></div>
+              </div>
+            </div>
+            <div class="project__info">
+              <div><h3>Prism Experiments</h3><p>Generative art and interactive experiments pushing creative boundaries.</p></div>
+              <span class="project__arrow">↗</span>
+            </div>
+            <div class="project__tags"><span>WebGL</span><span>Three.js</span><span>Creative Coding</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="section skills" id="skills">
+      <div class="container">
+        <div class="section__head section__head--split reveal">
+          <div>
+            <span class="section__label">04 / Skills &amp; tools</span>
+            <h2 class="section__title">What I <span class="gradient-text">work with</span></h2>
+          </div>
+          <p class="section__desc">A toolkit I've honed over years of crafting digital experiences — always evolving, always learning.</p>
+        </div>
+
+        <div class="skills__grid">
+          <div class="skill-col reveal">
+            <h3>Frontend</h3>
+            <div class="skill"><div class="skill__top"><span>React / Next.js</span><span>95%</span></div><div class="skill__track"><span data-level="95"></span></div></div>
+            <div class="skill"><div class="skill__top"><span>TypeScript</span><span>88%</span></div><div class="skill__track"><span data-level="88"></span></div></div>
+            <div class="skill"><div class="skill__top"><span>HTML / CSS</span><span>98%</span></div><div class="skill__track"><span data-level="98"></span></div></div>
+            <div class="skill"><div class="skill__top"><span>Vue / Svelte</span><span>80%</span></div><div class="skill__track"><span data-level="80"></span></div></div>
+          </div>
+          <div class="skill-col reveal">
+            <h3>Design</h3>
+            <div class="skill"><div class="skill__top"><span>Figma</span><span>94%</span></div><div class="skill__track"><span data-level="94"></span></div></div>
+            <div class="skill"><div class="skill__top"><span>UI / UX Principles</span><span>90%</span></div><div class="skill__track"><span data-level="90"></span></div></div>
+            <div class="skill"><div class="skill__top"><span>Design Systems</span><span>85%</span></div><div class="skill__track"><span data-level="85"></span></div></div>
+            <div class="skill"><div class="skill__top"><span>Prototyping</span><span>82%</span></div><div class="skill__track"><span data-level="82"></span></div></div>
+          </div>
+          <div class="skill-col reveal">
+            <h3>Extras</h3>
+            <div class="skill"><div class="skill__top"><span>Three.js / WebGL</span><span>78%</span></div><div class="skill__track"><span data-level="78"></span></div></div>
+            <div class="skill"><div class="skill__top"><span>GSAP / Motion</span><span>87%</span></div><div class="skill__track"><span data-level="87"></span></div></div>
+            <div class="skill"><div class="skill__top"><span>Node.js</span><span>75%</span></div><div class="skill__track"><span data-level="75"></span></div></div>
+            <div class="skill"><div class="skill__top"><span>Creative Coding</span><span>92%</span></div><div class="skill__track"><span data-level="92"></span></div></div>
+          </div>
+        </div>
+
+        <div class="tech-stack reveal">
+          <span>Also working with:</span>
+          <div class="tech-stack__items">
+            <span>Git</span><span>Tailwind</span><span>Framer Motion</span><span>Sanity</span><span>Stripe</span><span>Blender</span><span>Photoshop</span><span>Illustrator</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section contact" id="contact">
+      <div class="container">
+        <div class="contact__inner reveal">
+          <span class="section__label">05 / Get in touch</span>
+          <h2 class="contact__title">Have a project <span class="gradient-text">in mind?</span></h2>
+          <p class="contact__text">I'm always open to new opportunities and collaborations. Let's create something amazing together.</p>
+          <a href="mailto:hello@alexrivera.dev" class="btn btn--primary btn--large" data-cursor="pointer">Say hello <span class="btn__arrow">↗</span></a>
+          <div class="contact__socials">
+            <a href="#" data-cursor="pointer">GitHub</a>
+            <a href="#" data-cursor="pointer">Dribbble</a>
+            <a href="#" data-cursor="pointer">LinkedIn</a>
+            <a href="#" data-cursor="pointer">Instagram</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span>© <span id="year"></span> Alex Rivera. All rights reserved.</span>
+      <span>Designed &amp; built with <span class="heart">♥</span> in Berlin</span>
+      <a href="#home" data-cursor="pointer">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
